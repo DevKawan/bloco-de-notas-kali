@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css"> 
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+  />
+    <title>Bloco de notas - Kali</title>
+</head>
+<body>
+    
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <a href="https://instagram.com/kwn.dev/"><img class="logo-img" src="image/me.jpg" alt="Foto do usuário"></a>
+        </header>
+
+        <nav>
+
+            <a href="#">
+                <button>
+                    <span>
+                        <i class="material-symbols-outlined" alt="HOME"> home </i>
+                    </span>
+                </button>
+            </a>
+
+            <a href="https://devkawan.github.io/Kali-KwnDev/"><button>
+                <span>
+                    <i class="material-symbols-outlined" alt="PROJETOS"> email </i>
+                </span>
+            </button></a>
+
+            <a href="https://www.linkedin.com/in/kawan-franklin-fernandes-2b56741b9?originalSubdomain=br"><button>
+                <span>
+                    <i class="material-symbols-outlined" alt="DEV"> person </i>
+                </span>
+            </button></a>
+
+        </nav>
+    </aside>
+
+    <!-- MENU MOBILE -->
+
+        <button class="button-mobile" onclick="toggleMenu()">
+            <i class="material-symbols-outlined"> menu </i>
+            <span>Menu</span>
+        </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+        <button onclick="toggleMenu()" class="button-close">
+            <span>
+                <i class="material-symbols-outlined"> close </i>
+            </span>
+        </button>
+
+        <a href="#">
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> home </i>
+                    <span class="mobile-text">Home</span>
+                </span>
+            </button>
+        </a>
+
+        <a href="https://devkawan.github.io/Kali-KwnDev/"><button>
+            <span>
+                <i class="material-symbols-outlined"> email </i>
+                <span class="mobile-text">Portifólio</span>
+            </span>
+        </button></a>
+
+        <a href="https://www.linkedin.com/in/kawan-franklin-fernandes-2b56741b9?originalSubdomain=br"><button>
+            <span>
+                <i class="material-symbols-outlined"> person </i>
+                <span class="mobile-text">Dev</span>
+            </span>
+        </button></a>
+    </nav>
+
+    <!-- BLOCO DE NOTAS -->
+    <section class="container">
+        <div class="addNote-content">
+            <div class="icon-plus">+</div>
+            <span>Adicionar</span>
+        </div>
+        <div class="content">
+            
+        </div>
+    </section>
+
+<script src="js/main.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCWDAHbozmhet0aA2Ksxmjq0Jv2tieFRDA",
+      authDomain: "kali-418c8.firebaseapp.com",
+      projectId: "kali-418c8",
+      storageBucket: "kali-418c8.appspot.com",
+      messagingSenderId: "129377755594",
+      appId: "1:129377755594:web:beaa75d86f22a5bbeeef33",
+      measurementId: "G-YVBCXGG36M"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
