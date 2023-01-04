@@ -18,7 +18,9 @@ let items_db = localStorage.getItem("items_db")
   : [];
 
 const colors = [
-  "#3a2664"
+  "#3a2664",
+  "#352752",
+  "#4c1cad"
 ];
 const randomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
